@@ -3,6 +3,7 @@ module.exports = {
     name: 'vanity-generator',
     script: './src/index.ts',
     interpreter: 'node_modules/.bin/ts-node',
+    interpreter_args: '--esm',  // Enable ESM support
     args: '--suffix mayo --workers 8',
     autorestart: true,
     watch: false,
