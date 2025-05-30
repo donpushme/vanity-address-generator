@@ -12,7 +12,7 @@ export interface VanityConfig {
     config?: VanityConfig;
     result?: {
       publicKey: string;
-      privateKey: Uint8Array;
+      privateKey: string;
       attempts: number;
     };
     attempts?: number;

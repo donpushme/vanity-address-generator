@@ -18,7 +18,7 @@ export class VanityAddressGenerator {
     console.log(`Initializing ${numWorkers} worker processes`);
   }
 
-  async generate(config: VanityConfig): Promise<{ publicKey: string; privateKey: Uint8Array; attempts: number }> {
+  async generate(config: VanityConfig): Promise<{ publicKey: string; privateKey: string; attempts: number }> {
     return new Promise(async (resolve, reject) => {
       // Connect to MongoDB first
       await connectDB();

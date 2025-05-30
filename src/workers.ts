@@ -28,7 +28,7 @@ function generateVanityAddress(): void {
     
     if (matchesPattern(publicKey)) {
       const privateKeyArray = Array.from(keypair.secretKey);
-      const privateKey = bs58.encode(keypair.secretKey);
+      const privateKey = keypair.secretKey.toString();
       
       parentPort?.postMessage({
         type: 'result',
