@@ -2,6 +2,7 @@
   "name": "solana-vanity-generator",
   "version": "1.0.0",
   "description": "Multi-process Solana vanity address generator",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

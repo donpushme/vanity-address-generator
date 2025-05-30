@@ -1,5 +1,5 @@
-import { VanityAddressGenerator } from './vanity-generator';
-import { VanityConfig, VanityConfigWithWorkers } from './types';
+import { VanityAddressGenerator } from './vanity-generator.js';
+import { VanityConfig, VanityConfigWithWorkers } from './types.js';
 
 // Add environment check at startup
 console.log('Environment:', {
