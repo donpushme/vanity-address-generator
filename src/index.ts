@@ -11,7 +11,7 @@ function parseArgs(): VanityConfigWithWorkers {
   const args = process.argv.slice(2);
   const config: any = {
     numWorkers: 8, // default to 8 workers
-    caseSensitive: false // default to case insensitive
+    caseSensitive: true // default to case insensitive
   };
 
   for (let i = 0; i < args.length; i++) {
