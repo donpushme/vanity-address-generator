@@ -1,6 +1,12 @@
 import { VanityAddressGenerator } from './vanity-generator';
 import { VanityConfig, VanityConfigWithWorkers } from './types';
 
+// Add environment check at startup
+console.log('Environment:', {
+  NODE_ENV: process.env.NODE_ENV,
+  MONGODB_URI: process.env.MONGODB_URI?.substring(0, 20) + '...' // Only show the start for security
+});
+
 function parseArgs(): VanityConfigWithWorkers {
   const args = process.argv.slice(2);
   const config: any = {
