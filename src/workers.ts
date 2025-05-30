@@ -1,7 +1,7 @@
 import { parentPort } from 'worker_threads';
 import { Keypair } from '@solana/web3.js';
 import bs58 from 'bs58';
-import { VanityConfig, WorkerMessage } from './types';
+import { VanityConfig, WorkerMessage } from './types.js';
 
 let isRunning = false;
 let config: VanityConfig = {};
