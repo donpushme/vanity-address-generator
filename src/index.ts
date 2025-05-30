@@ -9,8 +9,8 @@ console.log('Environment:', {
 
 const config = {
   numWorkers: 8,
-  prefix: "mayo",
-  suffix: "",
+  prefix: "",
+  suffix: "mayo",
   contains: "",
   caseSensitive: true,
 };
